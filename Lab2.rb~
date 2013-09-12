@@ -1,0 +1,21 @@
+# Part1: Hello World
+class HelloWorldClass
+    def initialize(name)
+       @name = name.capitalize
+    end
+    def sayHi
+        puts "Hello #{@name}!"
+    end
+end
+
+def palindrome?(string)
+	temp_str = string.downcase.gsub(/\W/, "")
+	temp_str == temp_str.reverse
+end
+
+hello = HelloWorldClass.new("Omar")
+hello.sayHi
+puts palindrome?("hi")
+puts palindrome?("lol")
+
+

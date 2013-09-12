@@ -1,0 +1,25 @@
+def count_words2(string)
+    arr = string.split(" ")
+    hash = arr
+    #arr.each do |n|
+	#hash.each do |m|
+	    #if n == m
+		#hash[m].map
+    
+end
+
+def count_words(string)
+    myhash = {}
+    string.downcase.scan(/\b[\w]+/).each do |word|
+        if !myhash[word] then
+	    myhash[word] = 1
+	else myhash[word] += 1
+	end
+    end
+    myhash
+end
+
+
+
+puts count_words("hello I am happy happy")
+
